@@ -8,6 +8,7 @@ import Alquileres from './componentes/Alquilar'
 import Login from './componentes/Login'
 import Error from './componentes/Error'
 import Usuarios from './componentes/Tabla'
+import Fetch from './componentes/Fetch'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Route path='/login' element= {<Login />} />
       <Route path='/Error' element= {<Error />} />
       <Route path='/tabla' element= {<Usuarios />} />
+      <Route path='/fetch' element= {<Fetch />} />
     </Routes>
     </>
   )

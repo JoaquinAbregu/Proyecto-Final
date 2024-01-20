@@ -27,8 +27,10 @@ function Navegador() {
                             <li className="nav-item">
                                 <Link to= '/tabla' className="nav-link">Datos del alquiler</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link to= '/fetch' className="nav-link">Fetch</Link>
+                            </li>
                         </ul>
-
                         <Cerrar />
                     </div>
                 </div>
