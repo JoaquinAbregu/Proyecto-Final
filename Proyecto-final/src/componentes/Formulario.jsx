@@ -7,14 +7,22 @@ const Formulario = () => {
     const [numero, setNumero] = useState('');
     const [cabaña, setCabaña] = useState('');
     const [datos, setDatos] = useState([])
-    const imprimirDatos = () => {
-        console.log(`Los elementos que se cargaron son: ${nombre} ${numero} ${cabaña}`);
+    
+    const formularioNuevo = (e) => {
+        e.preventDefault();
+
+        const usuario = {
+            nombre,
+            numero,
+            cabaña
+        }
+
+        const nuevoUsuario = [...datos, usuario]
+
+        setDatos(nuevoUsuario);
+
+        window.localStorage.setItem('datos', JSON.stringify(nuevoUsuario))
         alert(`Los elementos que se han cargado son: ${nombre} ${numero} ${cabaña}`)
-        //Segunda forma de cargar los datis en el localStorage
-        //Cargamos el arreglo de objeto con los datos de la persona
-        setDatos([...datos, {nombre, numero, cabaña}])
-        //Cargamos el arreglo en el localStorage
-        window.localStorage.setItem('datos', JSON.stringify(datos))
 
         limpiarDatos()
     }
@@ -27,7 +35,7 @@ const Formulario = () => {
 
     return (
         <>
-            <form>
+            <form onSubmit={formularioNuevo}>
                 <div className="mb-3">
                     <label className="form-label">Ingrese su Nombre</label>
                     <input 
@@ -60,7 +68,7 @@ const Formulario = () => {
                     />
                 </div>
                 <div className="mb-3 text-center">
-                        <button onClick= { imprimirDatos } type="button" className="btn btn-success w-50">Login</button>
+                        <button type="submit" className="btn btn-success w-50">Login</button>
                 </div>
                 <div className="mb-3 text-center">
                     <button onClick={ limpiarDatos } className="btn btn-danger w-75">Reset</button>
