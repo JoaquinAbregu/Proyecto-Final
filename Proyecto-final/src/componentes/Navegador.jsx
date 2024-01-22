@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"; 
 import Cerrar from "./Cerrar";
+import '../css/Navegador.css'
 
 
 
@@ -7,7 +8,8 @@ function Navegador() {
     return (
 
         <>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="fixed-top">
+            <nav className="navbar navbar-expand-lg bg-body-tertiary" id="navegador">
                 <div className="container-fluid">
                     <Link to= '/' className="navbar-brand">Navbar</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,6 +37,7 @@ function Navegador() {
                     </div>
                 </div>
             </nav>
+        </div>
         </>
     )
 }

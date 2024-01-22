@@ -24,11 +24,11 @@ const Fetch = () => {
     }
     return(
         <>
-        <h1>Hola</h1>
+        <h1>Bienvenido</h1>
         <div className="personajes">
         
         <h1 className="text-center mb-5 mt-5">
-            Cabañas 
+            Perosnajes de Rick and Morty 
         </h1>
         {/* caracter me lee y guarda todos los personajes que esta en fetch */}
         <Tarjeta characters= { personaje } /> 

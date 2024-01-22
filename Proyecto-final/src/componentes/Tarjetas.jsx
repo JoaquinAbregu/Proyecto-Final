@@ -22,18 +22,6 @@ function Tarjeta({ characters }) {
     }
     return (
         <>
-{        <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="https://rickandmortyapi.com/api/character/avatar/7.jpeg" />
-            <Card.Body>
-                <Card.Title>Señor Bolainas</Card.Title>
-                <Card.Text>
-                    Franchesco Virgoliniiiiiii Fiuuuuuuuu
-                </Card.Text>
-                <Button variant="primary">El señor bolainas</Button>
-            </Card.Body>
-        </Card>}
-
-
         {/* Esta funcion me permite que por cada vuelta del ciclo for crea una tarjeta con los datos del haracters */}
         <div className='d-flex flex-wrap'>
         {characters.map((c) => (

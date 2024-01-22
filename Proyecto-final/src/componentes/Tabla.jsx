@@ -37,7 +37,7 @@ function Usuarios() {
 
     return (
         <>
-
+        <div id='Tabla'>
             <h1 className="text-center mt-5 mb-05">
                 Datos del Alquiler
             </h1>
@@ -63,6 +63,7 @@ function Usuarios() {
                     ))}
                 </tbody>
             </Table>
+        </div>
         </>
     );
 }

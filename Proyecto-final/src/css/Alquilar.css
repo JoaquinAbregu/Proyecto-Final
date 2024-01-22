@@ -1,0 +1,83 @@
+
+#producto{border: solid black;
+    /* float: left; */
+    width: 350px;
+    padding: 30px;
+    margin: 40px;
+    text-align: center;
+}
+
+#Button{
+    padding: 15px;
+    margin-top: 10px;
+}
+
+
+#Button a{
+    text-decoration: none;
+    color: white;
+}
+
+#Button:hover{
+    background: rgb(0,129,72);
+    color: white;
+}
+
+#Button a:hover{
+    color: white;
+}
+
+h3, h4{
+    margin: 15px;
+}
+
+#imagencab{
+    text-align: center;
+    height: 250px;
+}
+
+#imagencaba{
+    text-align: center;
+    height: 225px;
+    padding: 20px;
+}
+
+#imagencabañ{
+    height: 220px;
+    padding: 17px;
+}
+
+#imagencabaña{
+    height: 250px;
+    padding: 5px;
+}
+
+#precio{
+    font-weight: bold;
+    color: red;
+}
+
+.fuentePadre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#tituloAlq{
+    color: rgb(231,29,54);
+}
+
+h3{
+    color: rgb(216,0,50);
+}
+
+h4, figcaption{
+    color: white;
+}
+
+#p{
+    color: white;
+}
+body{
+    padding: 55px;
+}
